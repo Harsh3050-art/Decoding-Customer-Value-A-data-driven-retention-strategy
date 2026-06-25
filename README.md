@@ -16,9 +16,7 @@ This project builds a complete customer intelligence pipeline that transforms ra
 - Interactive Power BI Dashboard
 - Strategic Retention Playbook
 
-The final outcome is a comprehensive customer intelligence framework that supports data-driven retention and profitability decisions.  become reactive instead of strategic. .5  Dependency Score
-- Loyal Customers :contentReference[oaicite:3]{index=3}
-
+The final outcome is a comprehensive customer intelligence framework that supports data-driven retention and profitability decisions.  become reactive instead of strategic. 
 ---
 
 # Strategic Retention Playbook
@@ -31,8 +29,7 @@ Based on the analytical findings, a business playbook was created containing:
 - Executive Recommendations
 - Business Growth Roadmap
 
-The playbook recommends gradually transitioning from **discount-driven growth** to **retention-driven sustainable growth**. :contentReference[oaicite:4]{index=4}
-
+The playbook recommends gradually transitioning from **discount-driven growth** to **retention-driven sustainable growth**.
 ---
 
 # Project Workflow
