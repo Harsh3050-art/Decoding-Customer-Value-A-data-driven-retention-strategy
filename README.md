@@ -105,17 +105,18 @@ images/
 - Marketing Campaign Optimization
 
 ---
-
-# Author
+## 👨‍💻 Author
 
 **Harsh Rishi**
 
-B.Tech Civil Engineering
-
+B.Tech, Civil Engineering
 Indian Institute of Technology Roorkee
 
-LinkedIn: *(Add Link)*
+📧 Email: **[harshrishi2007@gmail.com](mailto:harshrishi2007@gmail.com)**
 
-Email: *(Add Email)*
+💼 LinkedIn: **https://www.linkedin.com/in/harsh-rishi-426b84346**
 
 ---
+
+If you found this project useful, consider giving the repository a ⭐ to support my work!
+
