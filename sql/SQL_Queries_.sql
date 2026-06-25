@@ -1,0 +1,16 @@
+create database retention_project;
+use retention_project;
+select* from feature_engineered_customers;
+describe feature_engineered_customers;
+select Customer_Value_Tier, count(*) as total_customers, round(avg(total_spend),2) as avg_spend from feature_engineered_customers group by customer_value_tier;
+select loyal_customer , count(*) as customers, round(avg(total_spend),2) as avg_spend  , round(avg(Promo_Dependency_Score),2) as avg_promo_dependency from feature_engineered_customers group by loyal_customer;
+select Satisfied_Customer, round(avg(Loyalty_Score),2) as avg_loyalty from feature_engineered_customers group by Satisfied_Customer;
+select location , count(*) as total_customers , round(avg(total_spend),2) as avg_spend , round(avg(promo_dependency_score),2) as avg_promo_dependency from feature_engineered_customers group by location order by avg_spend desc;
+select* from dataset;
+select category , round(avg(`Purchase Amount (USD)`),2) as avg_purchase , round(avg(`Previous Purchases`),2) as avg_previous_purchases from dataset group by category order by avg_previous_purchases desc; 
+select  count(*) as high_promo_customers from feature_engineered_customers where promo_dependency_score>0.7;
+select at_risk_customer , round(avg(total_spend),2) as avg_spend from feature_engineered_customers group by at_risk_customer;
+select gender , location , customer_value_tier, round(avg(loyalty_score),2) as avg_loyalty_score, round(avg(promo_dependency_score),2) as avg_promo_dependency from feature_engineered_customers where loyal_customer=1 group by gender, location, customer_value_tier order by avg_loyalty_score desc;
+SELECT ROUND(SUM(CASE WHEN Promo_Dependency_Score > 0.7 THEN Total_Spend ELSE 0 END),2) AS promo_dependent_revenue FROM feature_engineered_customers;
+select Location, count(*) as total_customers, round(avg(Total_Spend),2) as avg_spend, round(avg(Promo_Dependency_Score),2) as avg_promo_dependency from feature_engineered_customers group by  Location order by avg_spend desc, avg_promo_dependency asc;
+select Season, round (avg(`Previous Purchases`),2) as avg_previous_purchases, round (avg(`Purchase Amount (USD)`),2) as avg_purchase from dataset group by Season order by avg_previous_purchases desc;
